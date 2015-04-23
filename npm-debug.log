@@ -1,0 +1,95 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish' ]
+2 info using npm@2.5.1
+3 info using node@v0.12.1
+4 verbose node symlink C:\nodejs\\node.exe
+5 verbose publish [ '.' ]
+6 silly cache add args [ '.', null ]
+7 verbose cache add spec .
+8 silly cache add parsed spec { raw: '.',
+8 silly cache add   scope: null,
+8 silly cache add   name: null,
+8 silly cache add   rawSpec: '.',
+8 silly cache add   spec: 'H:\\Projects\\NodeJs\\wnext',
+8 silly cache add   type: 'directory' }
+9 verbose addLocalDirectory C:\Users\Anderson\AppData\Roaming\npm-cache\wnext\1.0.0\package.tgz not in flight; packing
+10 verbose tar pack [ 'C:\\Users\\Anderson\\AppData\\Roaming\\npm-cache\\wnext\\1.0.0\\package.tgz',
+10 verbose tar pack   'H:\\Projects\\NodeJs\\wnext' ]
+11 verbose tarball C:\Users\Anderson\AppData\Roaming\npm-cache\wnext\1.0.0\package.tgz
+12 verbose folder H:\Projects\NodeJs\wnext
+13 info prepublish wnext@1.0.0
+14 verbose addLocalTarball adding from inside cache C:\Users\Anderson\AppData\Roaming\npm-cache\wnext\1.0.0\package.tgz
+15 silly cache afterAdd wnext@1.0.0
+16 verbose afterAdd C:\Users\Anderson\AppData\Roaming\npm-cache\wnext\1.0.0\package\package.json not in flight; writing
+17 verbose afterAdd C:\Users\Anderson\AppData\Roaming\npm-cache\wnext\1.0.0\package\package.json written
+18 silly publish { name: 'wnext',
+18 silly publish   version: '1.0.0',
+18 silly publish   description: 'Perform certain actions on a directory from a `wnext` file.\r Each row in a wnext file is run as a shell command.\r ## Installation',
+18 silly publish   main: 'index.js',
+18 silly publish   directories: { test: 'test' },
+18 silly publish   dependencies: { is: '^3.0.1', q: '^1.2.0' },
+18 silly publish   devDependencies: { mocha: '^2.2.4', should: '^6.0.1' },
+18 silly publish   scripts: { test: 'mocha', start: 'node index.js' },
+18 silly publish   author: { name: 'mindmeoh' },
+18 silly publish   license: 'ISC',
+18 silly publish   repository: { type: 'git', url: 'https://github.com/mindmeoh/wnext.git' },
+18 silly publish   keywords: [ 'exec', 'shell', 'file', 'execute' ],
+18 silly publish   bugs: { url: 'https://github.com/mindmeoh/wnext/issues' },
+18 silly publish   homepage: 'https://github.com/mindmeoh/wnext',
+18 silly publish   readme: '# wnext\r\nPerform certain actions on a directory from a `wnext` file.\r\nEach row in a wnext file is run as a shell command.\r\n## Installation\r\n\r\nIn your project root\r\n\r\n```shell\r\n$ npm install wnext\r\n```\r\nIn your code\r\n\r\n```\r\nvar wnext = require(\'wnext\');\r\n```\r\n## Usage\r\n### A wnext file\r\nYou can excute multiples actions\r\n```\r\necho "Polka Dot"\r\nmkdir my_new_dir\r\nls\r\n```\r\n### In your code\r\nWith Callbacks\r\n```\r\nvar wnext = require(\'wnext\');\r\nwnext([folder], [callback]);\r\n```\r\nWith Promises\r\n```\r\nvar wnext = require(\'wnext\');\r\nwnext([folder]).then([result], [error]);\r\n```\r\n## Examples\r\n###Running in the same folder.\r\n```\r\nvar wnext = require(\'wnext\');\r\nwnext(function(err, result) {\r\n\tconsole.log(result);\r\n});\r\n```\r\n###Choosing another folder\r\n```\r\nvar wnext = require(\'wnext\');\r\nwnext(\'../\', function(err, result) {\r\n\tconsole.log(result);\r\n});\r\n```\r\nYou can get as promise as well.\r\n```\r\nwnext().then(function(result) {\r\n    console.log(result);\r\n}, function(err) {\r\n    console.error(err);\r\n});\r\n```',
+18 silly publish   readmeFilename: 'README.md',
+18 silly publish   gitHead: 'd8bcca2c3e33740a5d68f8604ff70ea4333a08ea',
+18 silly publish   _id: 'wnext@1.0.0',
+18 silly publish   _shasum: '9dc124de0aaeca85143f29200429e5164e948e7b',
+18 silly publish   _from: '.' }
+19 silly mapToRegistry name wnext
+20 silly mapToRegistry using default registry
+21 silly mapToRegistry registry https://registry.npmjs.org/
+22 silly mapToRegistry uri https://registry.npmjs.org/wnext
+23 verbose publish registryBase https://registry.npmjs.org/
+24 silly publish uploading C:\Users\Anderson\AppData\Roaming\npm-cache\wnext\1.0.0\package.tgz
+25 verbose request uri https://registry.npmjs.org/wnext
+26 verbose request sending authorization for write operation
+27 info attempt registry request try #1 at 1:58:54 PM
+28 verbose request using bearer token for auth
+29 verbose request id 6f88a463c935a921
+30 http request PUT https://registry.npmjs.org/wnext
+31 http 403 https://registry.npmjs.org/wnext
+32 verbose headers { 'content-type': 'application/json',
+32 verbose headers   'cache-control': 'max-age=60',
+32 verbose headers   'content-length': '95',
+32 verbose headers   'accept-ranges': 'bytes',
+32 verbose headers   date: 'Thu, 23 Apr 2015 16:58:55 GMT',
+32 verbose headers   via: '1.1 varnish',
+32 verbose headers   connection: 'keep-alive',
+32 verbose headers   'x-served-by': 'cache-atl6231-ATL',
+32 verbose headers   'x-cache': 'MISS',
+32 verbose headers   'x-cache-hits': '0',
+32 verbose headers   'x-timer': 'S1429808335.129786,VS0,VE152' }
+33 verbose request invalidating C:\Users\Anderson\AppData\Roaming\npm-cache\registry.npmjs.org\wnext on PUT
+34 error publish Failed PUT 403
+35 verbose stack Error: "You cannot publish over the previously published version 1.0.0." : wnext
+35 verbose stack     at CachingRegistryClient.<anonymous> (C:\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:254:14)
+35 verbose stack     at Request._callback (C:\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:178:14)
+35 verbose stack     at Request.self.callback (C:\nodejs\node_modules\npm\node_modules\request\request.js:344:22)
+35 verbose stack     at Request.emit (events.js:110:17)
+35 verbose stack     at Request.<anonymous> (C:\nodejs\node_modules\npm\node_modules\request\request.js:1239:14)
+35 verbose stack     at Request.emit (events.js:129:20)
+35 verbose stack     at IncomingMessage.<anonymous> (C:\nodejs\node_modules\npm\node_modules\request\request.js:1187:12)
+35 verbose stack     at IncomingMessage.emit (events.js:129:20)
+35 verbose stack     at _stream_readable.js:908:16
+35 verbose stack     at process._tickCallback (node.js:355:11)
+36 verbose statusCode 403
+37 verbose pkgid wnext
+38 verbose cwd H:\Projects\NodeJs\wnext
+39 error Windows_NT 6.3.9600
+40 error argv "C:\\nodejs\\\\node.exe" "C:\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+41 error node v0.12.1
+42 error npm  v2.5.1
+43 error code E403
+44 error "You cannot publish over the previously published version 1.0.0." : wnext
+45 error If you need help, you may report this error at:
+45 error     <http://github.com/npm/npm/issues>
+46 verbose exit [ 1, true ]
