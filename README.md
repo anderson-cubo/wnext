@@ -17,9 +17,8 @@ var wnext = require('wnext');
 ### A wnext file
 You can excute multiples actions
 ```
-echo "Polka Dot"
-mkdir my_new_dir
-ls
+pm2 kill
+pm2 start index.js
 ```
 ### In your code
 With Callbacks

@@ -1,6 +1,6 @@
 {
   "name": "wnext",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Perform certain actions on a directory from a `wnext` file.\r Each row in a wnext file is run as a shell command.\r ## Installation",
   "main": "index.js",
   "directories": {
